@@ -11,7 +11,7 @@ Date: 2026-08-29
 - [x] Open → sign → changed and unauthorized revoke event fixtures pass
 - [x] ncc Marketplace bundle builds
 - [x] npm audit reports no known vulnerabilities
-- [ ] Private GitHub repository pushed
+- [x] Private GitHub repository pushed
 - [ ] Real PR installed flow verified
 
 ## Submission
@@ -20,11 +20,14 @@ Date: 2026-08-29
 - Build issue: REW-548
 - Publication issue: REW-549
 - Organization action: REW-550
-- Review status: local production candidate
-- Current blocker: public Marketplace Action must use a public Reware-owned repo;
+- Actions account action: REW-556
+- Review status: private production candidate at commit `07514f1`
+- Current blockers: public Marketplace Action must use a public Reware-owned repo;
   no `reware-apps` organization is currently visible to the authenticated account.
-- Next action: push private candidate, verify a private PR flow, then resolve the
-  public organization/agreement gate.
+  Private PR #1 was dispatched, but GitHub refused to start the runner before any
+  step because of an account payment/private-minutes/spending-limit annotation.
+- Next action: resolve REW-550/REW-556, rerun PR #1 through red → green → yellow →
+  red, then transfer, release and complete the Marketplace agreement gate.
 
 ## Credential cleanup
 
