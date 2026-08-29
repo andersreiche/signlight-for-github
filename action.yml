@@ -1,0 +1,34 @@
+name: Signlight PR Sign-off
+description: Bind an explicit maintainer sign-off to the current pull request HEAD commit.
+author: Reware Apps
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  github-token:
+    description: Token used to read the PR, write the Signlight status, and maintain the state comment.
+    required: true
+  command-prefix:
+    description: Comment prefix for sign and revoke commands.
+    required: false
+    default: /signlight
+  minimum-permission:
+    description: Minimum repository permission required to sign when allowed-signers is empty.
+    required: false
+    default: write
+  allowed-signers:
+    description: Optional comma-separated GitHub logins. When set, only these users may sign.
+    required: false
+    default: ""
+  status-context:
+    description: Commit-status context shown in branch protection and the pull request checks list.
+    required: false
+    default: Signlight / PR sign-off
+outputs:
+  handled:
+    description: Whether this event was a Signlight state transition or reconciliation event.
+  status:
+    description: The resulting unsigned, signed, or changed state when handled.
+runs:
+  using: node24
+  main: dist/index.js

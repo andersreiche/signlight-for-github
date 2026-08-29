@@ -1,0 +1,23 @@
+{
+  "name": "signlight-for-github",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Content-aware PR sign-off without an external service.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist -m --license licenses.txt",
+    "test": "node --test",
+    "check": "npm test && npm run build"
+  },
+  "dependencies": {
+    "@actions/core": "3.0.1",
+    "@actions/github": "9.1.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.45.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
