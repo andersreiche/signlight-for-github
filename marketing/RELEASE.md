@@ -17,10 +17,10 @@ Date: 2026-08-30
 ## Submission
 
 - Linear launch parent: REW-536
-- Build issue: REW-548
+- Build evidence: consolidated into REW-549; former REW-548 pruned
 - Publication issue: REW-549
 - Organization action: REW-550
-- Actions account action: REW-556
+- Former private Actions account action: REW-556 pruned as superseded
 - Review status: private production candidate at commit `07514f1`
 - Current blockers: public Marketplace Action must use a public Reware-owned repo;
   no `reware-apps` organization is currently visible to the authenticated account.
@@ -29,6 +29,8 @@ Date: 2026-08-30
   business/institution) before creation; neither has been supplied.
   Private PR #1 was dispatched, but GitHub refused to start the runner before any
   step because of an account payment/private-minutes/spending-limit annotation.
+  That route is no longer a launch gate because the Marketplace release must be
+  public; the redundant billing issue was pruned.
 - Next action: user explicitly approves the GitHub terms and chooses the truthful
   ownership classification on REW-550. Then create the free organization, make
   the release repository public, rerun the real PR flow (public Actions removes
