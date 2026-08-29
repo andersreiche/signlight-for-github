@@ -84,8 +84,8 @@ The committed `dist/index.js` is built with `@vercel/ncc`; consumers do not need
 - Domain, permission, state-comment, and event runner: implemented
 - Unit/integration fixtures: passing
 - Marketplace bundle: generated
-- Private development repository: next gate
+- Private development repository: pushed
 - Public Reware-owned repository, real PR E2E, release, and Marketplace publish:
-  pending organization/agreement checks recorded in Linear
+  pending GitHub organization Terms/ownership approval recorded in Linear
 
 Support: `anders.reware@gmail.com`

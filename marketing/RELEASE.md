@@ -1,7 +1,7 @@
 # Release and submission record
 
 Version: 0.1.0 candidate
-Date: 2026-08-29
+Date: 2026-08-30
 
 ## Verification
 
@@ -24,10 +24,15 @@ Date: 2026-08-29
 - Review status: private production candidate at commit `07514f1`
 - Current blockers: public Marketplace Action must use a public Reware-owned repo;
   no `reware-apps` organization is currently visible to the authenticated account.
+  The free organization flow is available, but GitHub requires a new Terms of
+  Service acceptance and an ownership attestation (personal account versus
+  business/institution) before creation; neither has been supplied.
   Private PR #1 was dispatched, but GitHub refused to start the runner before any
   step because of an account payment/private-minutes/spending-limit annotation.
-- Next action: resolve REW-550/REW-556, rerun PR #1 through red → green → yellow →
-  red, then transfer, release and complete the Marketplace agreement gate.
+- Next action: user explicitly approves the GitHub terms and chooses the truthful
+  ownership classification on REW-550. Then create the free organization, make
+  the release repository public, rerun the real PR flow (public Actions removes
+  the private-minutes dependency), release, and complete the Marketplace gate.
 
 ## Credential cleanup
 
