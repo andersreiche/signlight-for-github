@@ -5,8 +5,10 @@
 - App name: Signlight PR Sign-off
 - Vendor: Reware Apps
 - Contact: anders.reware@gmail.com
-- Repository/product URL: pending public Reware organization
-- Support URL: repository issues plus business email
+- Repository URL: pending public Reware organization
+- Product URL: `https://signlight-for-confluence.anders-reware.chatgpt.site/github`
+- Support URL: `https://signlight-for-confluence.anders-reware.chatgpt.site/github/support`
+- Privacy URL: `https://signlight-for-confluence.anders-reware.chatgpt.site/github/privacy`
 - Privacy/security: `SECURITY.md` and `marketing/PRIVACY_DATA_MAP.md`
 
 ## Copy
