@@ -24,29 +24,26 @@ Date: 2026-08-30
 - Publication issue: REW-549
 - Obsolete organization action: REW-550 deleted after official-source review
 - Former private Actions account action: REW-556 pruned as superseded
-- Review status: public production release and stable tags published; Marketplace
-  attachment awaits GitHub sudo re-authentication
+- Review status: public production release and Marketplace listing live
 - Marketplace Developer Agreement v2.4 accepted on 2026-08-30 under the user's
   explicit approval. GitHub's current Action rules do not require an
   organization, so the existing personal repository remains the simpler free
   path.
 - Release `v1.0.0` and the stable `v1` tag both point to verified commit
   `8035802b47aaa946c032547f7de189191a2c7c83`.
-- Current blocker: checking “Publish this Action to the GitHub Marketplace” and
-  saving the release triggers GitHub sudo mode. Completion requires the account
-  holder's passkey, authenticator code, GitHub Mobile approval, or account email
-  code; no credential was requested, stored, or bypassed.
+- The account holder completed GitHub sudo re-authentication and saved the
+  Marketplace attachment on 2026-08-30. No credential was requested or stored.
   Private PR #1 was dispatched, but GitHub refused to start the runner before any
   step because of an account payment/private-minutes/spending-limit annotation.
   That route is no longer a launch gate because the Marketplace release must be
   public; the redundant billing issue was pruned.
-- Next action: re-authenticate GitHub sudo mode, attach the already-live
-  `v1.0.0` release to Marketplace with primary category `Code review` and
-  secondary category `Utilities`, then verify the public Marketplace URL.
+- Marketplace publication was independently verified with a public HTTP 200
+  response after the authenticated update.
 
 ## Public release
 
 - Release: <https://github.com/andersreiche/signlight-for-github/releases/tag/v1.0.0>
+- Marketplace: <https://github.com/marketplace/actions/signlight-pr-sign-off>
 - Stable usage reference: `andersreiche/signlight-for-github@v1`
 - Verification rerun before publication: 11/11 tests passed and the ncc
   production bundle rebuilt cleanly.
