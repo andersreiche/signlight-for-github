@@ -1,4 +1,4 @@
-name: Signlight private E2E
+name: Signlight
 
 on:
   pull_request_target:
@@ -21,7 +21,7 @@ jobs:
     steps:
       # pull_request_target is safe here because only the trusted default branch
       # is checked out; the pull request's code is never fetched or executed.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main
           persist-credentials: false

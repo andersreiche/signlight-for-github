@@ -4,7 +4,7 @@
 - [x] English listing copy and current platform evidence
 - [x] Privacy data map and security contact
 - [x] Public product, privacy, and support pages under Reware Apps identity
-- [ ] Personal-account single-action repository changed from private to public
+- [x] Personal-account single-action repository changed from private to public
 - [ ] Marketplace name uniqueness verified by release UI
 - [ ] Logo/icon and social preview without personal identity
 - [ ] Real English unsigned PR screenshot
@@ -14,4 +14,5 @@
 - [ ] Screenshots inspected in GitHub light/dark UI
 - [ ] Marketplace Developer Agreement already accepted or user approval obtained
 - [ ] v1 tag/release and Marketplace checkbox published
-- [ ] Real repository PR E2E verified
+- [x] Real repository PR E2E verified through unsigned, signed, changed, signed,
+  and signer-revoked states on PR #2
