@@ -5,7 +5,9 @@ open a public issue for a vulnerability that could affect installed workflows.
 
 Signlight runs entirely inside GitHub Actions. It does not operate an external
 service or receive repository data. The example workflow grants only read access
-to contents and pull requests plus write access to issues and commit statuses.
+to contents plus write access to pull requests, issues, and commit statuses.
+GitHub requires pull-request write permission for the bot's state comment even
+though it is sent through the issues-comments API.
 It intentionally never checks out or executes untrusted pull-request code from
 the privileged `pull_request_target` event.
 
