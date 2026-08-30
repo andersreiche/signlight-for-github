@@ -24,8 +24,9 @@ without an external approval service.
 - Selected shape: a free JavaScript Action in a public single-action repository.
 - Native hosting/storage/identity/licensing/billing: Actions runtime, event actor,
   commit statuses, and PR comment storage; no paid billing in v1.
-- Hard gates: public Reware-owned repo and Marketplace Developer Agreement; a
-  future paid GitHub App also needs verified publisher status and 100 installs.
+- Hard gates: public single-action repo and Marketplace Developer Agreement for
+  the personal repository owner; a future paid GitHub App also needs an
+  organization, verified publisher status, and 100 installs.
 - Runner-up: GitHub App after traction, if customers need centralized policy or
   paid plans enough to justify a hosted webhook service.
 

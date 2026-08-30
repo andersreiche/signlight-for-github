@@ -4,7 +4,7 @@
 - [x] English listing copy and current platform evidence
 - [x] Privacy data map and security contact
 - [x] Public product, privacy, and support pages under Reware Apps identity
-- [ ] Public Reware-owned single-action repository
+- [ ] Personal-account single-action repository changed from private to public
 - [ ] Marketplace name uniqueness verified by release UI
 - [ ] Logo/icon and social preview without personal identity
 - [ ] Real English unsigned PR screenshot

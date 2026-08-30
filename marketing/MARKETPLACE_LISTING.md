@@ -3,9 +3,9 @@
 ## Identity
 
 - App name: Signlight PR Sign-off
-- Vendor: Reware Apps
+- Vendor: Reware Apps (operated by Reware ApS)
 - Contact: anders.reware@gmail.com
-- Repository URL: pending public Reware organization
+- Repository URL: `https://github.com/andersreiche/signlight-for-github`
 - Product URL: `https://signlight-for-confluence.anders-reware.chatgpt.site/github`
 - Support URL: `https://signlight-for-confluence.anders-reware.chatgpt.site/github/support`
 - Privacy URL: `https://signlight-for-confluence.anders-reware.chatgpt.site/github/privacy`
@@ -39,5 +39,5 @@
 - Runtime: node24 bundled JavaScript Action
 - License: MIT
 - Price: free
-- Publication blockers: public Reware-owned repository and Marketplace
-  Developer Agreement state.
+- Publication blockers: make the tested personal-account repository public and
+  accept the Marketplace Developer Agreement immediately before release.

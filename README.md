@@ -42,7 +42,7 @@ jobs:
       (github.event_name == 'issue_comment' && github.event.issue.pull_request)
     runs-on: ubuntu-latest
     steps:
-      - uses: reware-apps/signlight-for-github@v1
+      - uses: andersreiche/signlight-for-github@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -85,7 +85,7 @@ The committed `dist/index.js` is built with `@vercel/ncc`; consumers do not need
 - Unit/integration fixtures: passing
 - Marketplace bundle: generated
 - Private development repository: pushed
-- Public Reware-owned repository, real PR E2E, release, and Marketplace publish:
-  pending GitHub organization Terms/ownership approval recorded in Linear
+- Public release repository, real PR E2E, release, and Marketplace publish:
+  pending the personal repo visibility change and Marketplace Developer Agreement
 
 Support: `anders.reware@gmail.com`

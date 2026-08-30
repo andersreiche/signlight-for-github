@@ -1,6 +1,6 @@
 # GitHub Marketplace research
 
-Research date: 2026-08-29
+Research date: 2026-08-30
 
 ## Platform fit
 
@@ -15,6 +15,9 @@ Research date: 2026-08-29
 - Publication: public repository with one root `action.yml`, unique action name,
   tagged release, 2FA, and accepted Marketplace Developer Agreement. Qualifying
   Actions publish without review.
+- A free Marketplace Action can be published directly from a personal account;
+  GitHub does not require an organization. An organization and publisher
+  verification become relevant for a later paid GitHub App, not this free Action.
 - Data egress: none.
 
 ## Competitors and native alternatives
@@ -28,7 +31,7 @@ Research date: 2026-08-29
 
 ## Current official sources
 
-- [Publishing Actions in GitHub Marketplace](https://docs.github.com/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace) — accessed 2026-08-29.
+- [Publishing Actions in GitHub Marketplace](https://docs.github.com/en/actions/how-tos/create-and-publish-actions/publish-in-github-marketplace) — accessed 2026-08-30.
 - [Requirements for Marketplace apps](https://docs.github.com/en/apps/github-marketplace/creating-apps-for-github-marketplace/requirements-for-listing-an-app) — accessed 2026-08-29.
 - [Commit statuses REST API](https://docs.github.com/en/rest/commits/statuses) — accessed 2026-08-29.
 - [Repository collaborator permissions](https://docs.github.com/en/rest/collaborators/collaborators#get-repository-permissions-for-a-user) — accessed 2026-08-29.
