@@ -12,7 +12,10 @@ Date: 2026-08-30
 - [x] ncc Marketplace bundle builds
 - [x] npm audit reports no known vulnerabilities
 - [x] Private GitHub repository pushed
-- [ ] Real PR installed flow verified
+- [x] Full Git history scanned by gitleaks 8.30.1 with no findings
+- [x] Repository changed to public after the clean history scan
+- [x] Real PR #2 verified red unsigned → green signed → yellow changed →
+  green re-signed → red signer-revoked
 
 ## Submission
 
@@ -21,22 +24,31 @@ Date: 2026-08-30
 - Publication issue: REW-549
 - Obsolete organization action: REW-550 deleted after official-source review
 - Former private Actions account action: REW-556 pruned as superseded
-- Review status: private production candidate at commit `07514f1`
-- Current blockers: a Marketplace Action must use a public repository and the
-  repository owner must accept the Marketplace Developer Agreement before the
-  release checkbox is enabled. GitHub's current Action rules do not require an
-  organization, so the existing personal repository is the simpler free path.
+- Review status: public production candidate; release tag not yet published
+- Current blocker: the repository owner must accept the Marketplace Developer
+  Agreement before the release checkbox is enabled. GitHub's current Action
+  rules do not require an organization, so the existing personal repository is
+  the simpler free path.
   Private PR #1 was dispatched, but GitHub refused to start the runner before any
   step because of an account payment/private-minutes/spending-limit annotation.
   That route is no longer a launch gate because the Marketplace release must be
   public; the redundant billing issue was pruned.
-- Next action: secret-scan and make only this release repository public, rerun
-  the real PR flow (public Actions removes the private-minutes dependency), then
-  obtain action-time approval for the Marketplace Developer Agreement and
-  publish release `v1.0.0`.
+- Next action: obtain action-time approval for the Marketplace Developer
+  Agreement, publish release `v1.0.0`, and verify the live Marketplace listing.
+
+## Real E2E evidence
+
+- PR: <https://github.com/andersreiche/signlight-for-github/pull/2>
+- Initial production run exposed that GitHub requires `pull-requests: write` for
+  the bot's PR state comment even when it uses the issues-comments endpoint.
+  The workflow and public setup guidance were corrected, rebuilt, and retested.
+- GitHub Action run `33302890299` passed the initial red state.
+- Issue-comment runs `33302905878`, `33302936270`, and `33302949497` passed the
+  sign, re-sign, and signer-revoke transitions; synchronize run `33302922136`
+  passed the yellow changed transition.
 
 ## Credential cleanup
 
 - No new persistent credential created.
 - Runtime uses caller-provided ephemeral `GITHUB_TOKEN` only.
-- Repository secret scan required before public transfer.
+- Full-history secret scan passed before the public visibility change.
